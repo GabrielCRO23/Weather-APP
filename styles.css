@@ -23,7 +23,7 @@ html {
     width: 100%;
     font-weight: 700;
     color: #3D9970;
-    font-size: 32px;
+    font-size: 2em;
     text-shadow:
         0.07em 0 black,
         0 0.07em black,
@@ -50,9 +50,9 @@ footer {
     left: 0;
     right: 0;
     
-    background: linear-gradient(to right, #212529, rgb(44, 44, 31));
+    background: linear-gradient(to right, rgba(25, 25, 20, 0.75), rgb(25, 25, 10, 0.75));
     height: auto;
-    font-size: 0.75vw;
+    font-size: .75em;
     max-width: 100%;
     color: #fff;
 }
@@ -79,13 +79,13 @@ footer {
 
   a {
       text-decoration: none;
-      color: #265301;
+      color: white;
       margin-left:0.25em;
       margin-right: 0.25em
   }
 
   a:visited {
-    color: #437A16;
+    color: white;
   }
   
   a:focus {
