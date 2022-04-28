@@ -190,6 +190,7 @@ const COUNTRY = document.querySelector('#country')
 const details = document.querySelector('#details')
 const FEELS_LIKE = document.querySelector('#feels-like')
 const checkbox = document.querySelector('#getWeatherF')
+const inputTextElement = document.querySelector('#weather-search')
 
 let CITY_NAME;
 let CURRENT_TEMP;
@@ -206,10 +207,14 @@ searchButton.addEventListener('click', function(){
     event.preventDefault();
     if (checkbox.checked === true) {
         getWeatherF();
+        inputTextElement.value = ''
     } else {
         getWeatherC();
+        inputTextElement.value = ''
     }
 });
+
+
 
 async function getWeatherC() {
     UNITS = 'units=metric'

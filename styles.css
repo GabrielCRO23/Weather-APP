@@ -22,7 +22,13 @@ html {
     min-height: 80vh;
     width: 100%;
     font-weight: 700;
-    
+    color: #3D9970;
+    font-size: 32px;
+    text-shadow:
+        0.07em 0 black,
+        0 0.07em black,
+        -0.07em 0 black,
+        0 -0.07em black;
 }
 
 
@@ -30,7 +36,8 @@ html {
 .form-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    margin-top: 50px;
+    
     
 }
 
@@ -38,13 +45,11 @@ footer {
     display: flex;
     margin-top: auto;
     justify-content: center;
-    
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    background: #111;
-    
+    background: #212529;
     padding: 5px;
     max-width: 100%;
     color: #fff;
@@ -54,6 +59,12 @@ footer {
     height: auto;
     width: 100%;
 }
+
+#weather-search {
+    border-radius: 4px;   
+}
+
+
 
   input[type=checkbox] {
     -webkit-appearance: none;
