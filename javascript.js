@@ -22,10 +22,10 @@ searchButton.addEventListener('click', function(){
     event.preventDefault();
     if (checkbox.checked === true) {
         getWeatherF();
-        inputTextElement.value = ''
+        
     } else {
         getWeatherC();
-        inputTextElement.value = ''
+        
     }
 });
 
