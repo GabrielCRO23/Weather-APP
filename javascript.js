@@ -69,7 +69,6 @@ async function getWeatherDefault() {
     temperatureDisplay.textContent = Math.floor(data.main.temp) + '°C'
     details.textContent = data.weather[0].description.toUpperCase();
     FEELS_LIKE.textContent = 'FEELS LIKE:' + ' ' + data.main.feels_like + '°C'
-    console.log(data)
 }
 
 checkbox.addEventListener('change', function(){
