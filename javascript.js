@@ -41,7 +41,7 @@ async function getWeatherC() {
     flag.selectByAlpha2(data.sys.country);
     temperatureDisplay.textContent = Math.floor(data.main.temp) + '°C'
     details.textContent = data.weather[0].description.toUpperCase();
-    FEELS_LIKE.textContent = 'FEELS LIKE:' + ' ' + data.main.feels_like + '°C'
+    FEELS_LIKE.textContent = 'FEELS LIKE:' + ' ' + Math.floor(data.main.feels_like) + '°C'
     
   }
 
@@ -55,7 +55,7 @@ async function getWeatherF() {
     flag.selectByAlpha2(data.sys.country);
     temperatureDisplay.textContent = Math.floor(data.main.temp) + '°F'
     details.textContent = data.weather[0].description.toUpperCase();
-    FEELS_LIKE.textContent = 'FEELS LIKE:' + ' ' + data.main.feels_like + '°F' 
+    FEELS_LIKE.textContent = 'FEELS LIKE:' + ' ' + Math.floor(data.main.feels_like) + '°F' 
 }
 
 async function getWeatherDefault() {
@@ -68,7 +68,7 @@ async function getWeatherDefault() {
     flag.selectByAlpha2(data.sys.country);
     temperatureDisplay.textContent = Math.floor(data.main.temp) + '°C'
     details.textContent = data.weather[0].description.toUpperCase();
-    FEELS_LIKE.textContent = 'FEELS LIKE:' + ' ' + data.main.feels_like + '°C'
+    FEELS_LIKE.textContent = 'FEELS LIKE:' + ' ' + Math.floor(data.main.feels_like) + '°C'
 }
 
 checkbox.addEventListener('change', function(){

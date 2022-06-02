@@ -22,13 +22,8 @@ body {
     min-height: 80vh;
     width: 100%;
     font-weight: 700;
-    color: #3D9970;
+    color: #991f00;
     font-size: 2em;
-    text-shadow:
-        0.07em 0 black,
-        0 0.07em black,
-        -0.07em 0 black,
-        0 -0.07em black;
 }
 
 
