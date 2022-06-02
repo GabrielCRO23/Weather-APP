@@ -13,6 +13,11 @@ let CURRENT_TEMP;
 let UNITS;
 
 
+window.addEventListener("load", function () {
+    const loader = document.querySelector(".loader");
+    loader.className += " hidden"; // class "loader hidden"
+});
+
 
 //flag.selectByAlpha2(COUNTRY.textContent);
 
